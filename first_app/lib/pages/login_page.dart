@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:first_app/components/LoginButton.dart';
+import 'package:first_app/components/slideUp.dart';
 import 'package:first_app/components/textfield.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +14,11 @@ class LoginPage extends StatelessWidget{
 
   //sign in
 
-  signUserIn(){
-
+  void signUserIn() async{
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: usernameController.text,
+       password: passwordController.text
+       );
   }
 
     @override
@@ -75,11 +81,14 @@ class LoginPage extends StatelessWidget{
                   ],
                 ),
                 const SizedBox(height: 25,),
-                Text("Why Dev/Track?",style: TextStyle(decoration: TextDecoration.underline,decorationColor: Color(0xFF93B1A6),decorationThickness: 1.5, color:  Color(0xFF93B1A6)))
+                Text("Why Dev/Track?",style: TextStyle(decoration: TextDecoration.underline,decorationColor: Color(0xFF93B1A6),decorationThickness: 1.5, color:  Color(0xFF93B1A6))),
+
             ],
             ),
           ),
-        )
+
+        ),
+
 
       );
     }
