@@ -3,74 +3,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Formpage());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFF040D12),
-      body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'Dev/Hub',
-            style: TextStyle(
-              fontSize: 64,
-              color: Color(0xFF93B1A4),
-              fontFamily: 'Poppins',
-            ),
-          ),
-          Container(
-              width: 200.0,
-              height: 100.0,
-              color: Color(0x183D3D),
-              padding: EdgeInsets.all(35),
-              margin: EdgeInsets.all(20),
-              alignment: Alignment.center,
-              child: Text(
-                "Welcome",
-                style: TextStyle(fontSize: 25, color: Colors.white),
-              )),
-        ],
-      )),
-      floatingActionButton: Container(
-        width: 100.0, // Set the desired width
-        height: 50.0, // Set t
-        child: FloatingActionButton(
-          child: Text(
-            'Apply',
-            style: TextStyle(
-              color: Colors.white,
-              fontFamily: 'Poppins',
-            ),
-          ),
-          backgroundColor: Color(0xFF93B1A4).withOpacity(0.6),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => MyHomePage()),
-            );
-          },
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
+class Formpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
