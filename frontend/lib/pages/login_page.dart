@@ -4,20 +4,33 @@ import 'package:first_app/components/textfield.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   LoginPage({super.key});
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   final usernameController = TextEditingController();
+
   final passwordController = TextEditingController();
 
   //sign in
-
   signUserIn() async {
-    await FirebaseAuth.instance
-        .signInWithEmailAndPassword(
-          email: usernameController.text,
-         password: passwordController.text,
-         );
+    showDialog(
+        context: context,
+        builder: (context) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        });
+
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: usernameController.text,
+      password: passwordController.text,
+    );
+    Navigator.pop(context);
   }
 
   @override
