@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutterproj/main.dart';
 
@@ -8,15 +6,14 @@ class Formpage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF040D12),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 100,
-              ),
-              Text(
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: 50),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
                 'Application for Dev/Track',
                 style: TextStyle(
                   fontSize: 22,
@@ -24,37 +21,132 @@ class Formpage2 extends StatelessWidget {
                   fontFamily: 'Poppins',
                 ),
               ),
-              InputField(label: 'Go wild, we wanna know who you are as a person'),
-              InputField(label: 'Share your stories with us'),
-              InputField(label: 'Phone Number'),
-              InputField(label: 'SRN'),
-              InputField(label: 'Branch'),
-              InputField(label: 'Semester'),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: Container(
-        width: 100.0,
-        height: 50.0,
-        child: FloatingActionButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Formpage()),
-            );
-          },
-          backgroundColor: Color(0xFF93B1A4).withOpacity(0.6),
-          child: Text(
-            'Submit',
-            style: TextStyle(
-              color: Colors.white,
-              fontFamily: 'Poppins',
             ),
-          ),
+            SizedBox(height: 20),
+            InputField(label: 'Tell us more about yourself, what makes you___,y’know?'),
+            InputField(label: 'Tell us about your coding adventures, have you dabbled in any programming languages or worked on any cool projects?'),
+            InputField(label: 'Please enter your GitHub ID!'),
+            InputField(label: 'Enter your LinkedIn profile URL!'),
+            InputField(label: 'Drop your resume if you got one'),
+
+            SizedBox(height: 20),
+
+            // Radio Buttons for Development Track
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Now choose a field you would wanna work on...',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      RadioListTile<String>(
+                        title: Text(
+                          'AI',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        value: 'AI',
+                        groupValue: null,
+                        onChanged: (String? value) {
+                          // Add your logic here
+                        },
+                      ),
+                      RadioListTile<String>(
+                        title: Text(
+                          'Game Development',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        value: 'Game Development',
+                        groupValue: null,
+                        onChanged: (String? value) {
+
+                        },
+                      ),
+                      RadioListTile<String>(
+                        title: Text(
+                          'Android',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        value: 'Android',
+                        groupValue: null,
+                        onChanged: (String? value) {
+
+                        },
+                      ),
+                      RadioListTile<String>(
+                        title: Text(
+                          'Web Development',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        value: 'Web Development',
+                        groupValue: null,
+                        onChanged: (String? value) {
+                        },
+                      ),
+                      RadioListTile<String>(
+                        title: Text(
+                          'UI/UX',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        value: 'UI/UX',
+                        groupValue: null,
+                        onChanged: (String? value) {
+                        },
+                      ),
+
+                      InputField(label: 'Why did you choose that specific track?'),
+               ],
+              ),
+              ],
+             ),
+            ),
+
+            SizedBox(height: 20),
+
+            // Yes or No Button
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xFF93B1A4).withOpacity(0.6),
+                ),
+                child: Text(
+                  'Submit',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+            ),
+
+            SizedBox(height: 50),
+          ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
@@ -67,9 +159,9 @@ class InputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      width: 300,
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       child: TextField(
+        maxLines: 3,
         style: TextStyle(
           color: Colors.white,
           fontFamily: 'Poppins',
@@ -81,13 +173,17 @@ class InputField extends StatelessWidget {
             fontFamily: 'Poppins',
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide:
-            BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 5.0,),
+            borderSide: BorderSide(
+              color: Color(0x183D3D).withOpacity(0.6),
+              width: 2.0,
+            ),
             borderRadius: BorderRadius.circular(10.0),
           ),
           enabledBorder: OutlineInputBorder(
-            borderSide:
-            BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 5.0),
+            borderSide: BorderSide(
+              color: Color(0x183D3D).withOpacity(0.6),
+              width: 2.0,
+            ),
             borderRadius: BorderRadius.circular(10.0),
           ),
         ),
