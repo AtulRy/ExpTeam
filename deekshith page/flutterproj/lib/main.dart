@@ -1,11 +1,19 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutterproj/form.dart';
 
 void main() {
-  runApp(Formpage());
+  runApp(MyApp());
 }
-
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Formpage(),
+    );
+  }
+}
 class Formpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +33,7 @@ class Formpage extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 100, // Set the desired height
+                height: 100,
               ),
               Text(
                 'Application for Dev/Track',
@@ -46,11 +54,14 @@ class Formpage extends StatelessWidget {
         ),
       ),
       floatingActionButton: Container(
-        width: 100.0, // Set the desired width
-        height: 50.0, // Set the desired height
+        width: 100.0,
+        height: 50.0,
         child: FloatingActionButton(
           onPressed: () {
-            // Add your onPressed logic here
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Formpage2()),
+            );
           },
           backgroundColor: Color(0xFF93B1A4).withOpacity(0.6),
           child: Text(
