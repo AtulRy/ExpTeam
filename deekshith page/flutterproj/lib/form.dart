@@ -25,10 +25,6 @@ class Formpage2 extends StatelessWidget {
             SizedBox(height: 20),
             InputField(label: 'Tell us more about yourself, what makes you___,y’know?'),
             InputField(label: 'Tell us about your coding adventures, have you dabbled in any programming languages or worked on any cool projects?'),
-            InputField(label: 'Please enter your GitHub ID!'),
-            InputField(label: 'Enter your LinkedIn profile URL!'),
-            InputField(label: 'Drop your resume if you got one'),
-
             SizedBox(height: 20),
 
             // Radio Buttons for Development Track
@@ -116,15 +112,54 @@ class Formpage2 extends StatelessWidget {
                       ),
 
                       InputField(label: 'Why did you choose that specific track?'),
-               ],
+                    ],
+                  ),
+                ],
               ),
-              ],
-             ),
             ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Do you have a GitHub account?',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Radio(value: true, groupValue: null, onChanged: null),
+                      Text(
+                        'Yes',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                        ),
+                      ),
+                      Radio(value: false, groupValue: null, onChanged: null),
+                      Text(
+                        'No',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            InputField(label: 'Please enter your GitHub ID!'),
+            InputField(label: 'Enter your LinkedIn profile URL!'),
+            InputField(label: 'Drop your resume if you got one'),
+
+
 
             SizedBox(height: 20),
-
-            // Yes or No Button
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: ElevatedButton(
