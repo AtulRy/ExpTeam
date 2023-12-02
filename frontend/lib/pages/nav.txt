@@ -1,0 +1,15 @@
+bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFF040D12),
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Color(0xFF93B1A4).withOpacity(0.5),
+        selectedLabelStyle: TextStyle(color: Colors.white),
+        unselectedLabelStyle: TextStyle(color: Color(0xFF93B1A4).withOpacity(0.5)),
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_month),label: "Schedule"),
+          BottomNavigationBarItem(icon: Icon(Icons.inbox),label: "Inbox"),
+          BottomNavigationBarItem(icon: Icon(Icons.folder),label: "Projects"),
+
+
+        ],),
