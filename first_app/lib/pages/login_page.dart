@@ -2,6 +2,8 @@ import 'package:first_app/components/LoginButton.dart';
 import 'package:first_app/components/textfield.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+void main(),
+runApp(ProfilePage());
 
 class LoginPage extends StatelessWidget{
   LoginPage({super.key});
