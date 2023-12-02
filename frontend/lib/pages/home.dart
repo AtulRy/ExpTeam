@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
         actions: [IconButton(onPressed: logout, icon: Icon(Icons.logout))],
       ),
       body: Center(
-        child: Text("Ur in Bish!Congrats "+user.email!,
+        child: Text("Ur in Bish!Congrats \n"+user.email!,
         style: TextStyle(fontSize: 20),),
       ),
     );
