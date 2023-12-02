@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Formpage(),
+      home: sampage(),
     );
   }
 }
-class Formpage extends StatelessWidget {
+class sampage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,29 +49,31 @@ class Formpage extends StatelessWidget {
               InputField(label: 'SRN'),
               InputField(label: 'Branch'),
               InputField(label: 'Semester'),
-              SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: ElevatedButton(
-                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Formpage2()),);},
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF93B1A4).withOpacity(0.6),
-                  ),
-                  child: Text(
-                    'Next',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Poppins',
-                    ),
-                  ),
-                ),
-              ),
             ],
-
           ),
         ),
       ),
-
+      floatingActionButton: Container(
+        width: 100.0,
+        height: 50.0,
+        child: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Formpage2()),
+            );
+          },
+          backgroundColor: Color(0xFF93B1A4).withOpacity(0.6),
+          child: Text(
+            'Next',
+            style: TextStyle(
+              color: Colors.white,
+              fontFamily: 'Poppins',
+            ),
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
@@ -99,12 +101,12 @@ class InputField extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderSide:
-                BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 2.0),
+            BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 2.0),
             borderRadius: BorderRadius.circular(4.0),
           ),
           enabledBorder: OutlineInputBorder(
             borderSide:
-                BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 2.0),
+            BorderSide(color: Color(0x183D3D).withOpacity(0.6), width: 2.0),
             borderRadius: BorderRadius.circular(4.0),
           ),
         ),
