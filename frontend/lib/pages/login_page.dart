@@ -1,3 +1,6 @@
+// import 'dart:js';
+// import 'package:path/path.dart' as Path;
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:first_app/components/LoginButton.dart';
 import 'package:first_app/components/textfield.dart';
@@ -26,11 +29,50 @@ class _LoginPageState extends State<LoginPage> {
           );
         });
 
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: usernameController.text,
-      password: passwordController.text,
-    );
-    Navigator.pop(context);
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: usernameController.text,
+        password: passwordController.text,
+      );
+      Navigator.pop(context);
+    } on FirebaseAuthException catch (e) {
+       Navigator.pop(context);
+       showDialog(
+        context: context,
+        builder: (context) {
+          return const AlertDialog(
+            title: Text("Are You dislexic?"),
+          );
+        });                                           //change later
+      
+     
+      if (e.code == 'user-not-found') {
+        print(e.message);
+        
+      } else if (e.code == "wrong-password") {
+        wrongPassword();
+      }
+    }
+  }
+
+  wrongEmail() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return const AlertDialog(
+            title: Text("Email id not found"),
+          );
+        });
+  }
+
+  wrongPassword() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return const AlertDialog(
+            title: Text("Wrong Password"),
+          );
+        });
   }
 
   @override
