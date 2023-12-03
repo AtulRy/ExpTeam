@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:first_app/pages/home.dart';
+import 'package:first_app/pages/loginOrRegister.dart';
 import 'package:first_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,10 +15,8 @@ class auth extends StatelessWidget {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return HomePage();
-            } 
-            
-            else {
-              return LoginPage();
+            } else {
+              return LoginOrRegister();
             }
           }),
     );

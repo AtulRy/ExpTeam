@@ -7,23 +7,23 @@ import 'package:first_app/components/textfield.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-
+class RegisterPage extends StatefulWidget {
   final Function()? onTap;
 
-  LoginPage({super.key, required this.onTap});
+  RegisterPage({super.key, required this.onTap});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   final usernameController = TextEditingController();
 
   final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
 
   //sign in
-  signUserIn() async {
+  signUserUp() async {
     showDialog(
         context: context,
         builder: (context) {
@@ -33,22 +33,24 @@ class _LoginPageState extends State<LoginPage> {
         });
 
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: usernameController.text,
-        password: passwordController.text,
-      );
-      Navigator.pop(context);
+      if (passwordController.text == confirmPasswordController.text) {
+        await FirebaseAuth.instance.createUserWithEmailAndPassword(
+          email: usernameController.text,
+          password: passwordController.text,
+        );
+        Navigator.pop(context);
+      } else {
+        Navigator.pop(context);
+        showError("Passwords don't match!");
+      }
     } on FirebaseAuthException catch (e) {
       Navigator.pop(context);
 
       showError(e.code); //change later
-
-      
     }
   }
 
-
-void showError(String error){
+  void showError(String error) {
     showDialog(
         context: context,
         builder: (context) {
@@ -57,8 +59,6 @@ void showError(String error){
           );
         });
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +78,7 @@ void showError(String error){
                   const SizedBox(height: 50),
 
                   Text(
-                    'Welcome Back! We missed You!\n\(Not you Rayan\)',
+                    'Hey There! We\'re Glad to See You!!\nLet\'s get you an account!',
                     style: TextStyle(color: Colors.grey[500]),
                     textAlign: TextAlign.center,
                   ),
@@ -87,7 +87,7 @@ void showError(String error){
 
                   Mytextfield(
                     controller: usernameController,
-                    hintText: 'Username',
+                    hintText: 'Email ID',
                     obscureText: false,
                   ),
                   const SizedBox(height: 30),
@@ -96,21 +96,14 @@ void showError(String error){
                     hintText: 'Password',
                     obscureText: true,
                   ),
+                  const SizedBox(height: 30),
+                  Mytextfield(
+                    controller: confirmPasswordController,
+                    hintText: 'Confirm Password',
+                    obscureText: true,
+                  ),
                   const SizedBox(
                     height: 10,
-                  ),
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          'Forgot Password',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
                   ),
 
                   const SizedBox(
@@ -118,44 +111,48 @@ void showError(String error){
                   ),
 
                   LoginButton(
-                    text: "Login",
-                    onTap: signUserIn,
+                    text: "Sign Up",
+                    onTap: signUserUp,
                   ),
-                  
 
                   const SizedBox(
                     height: 60,
                   ),
 
-                
-                  
-                  
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Already Have an Account? ",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      const SizedBox(
+                        height: 25,
+                      ),
+                      GestureDetector(
+                        onTap: widget.onTap,
+                        child: Text(" Login Now",
+                            style: TextStyle(
+                                decorationColor: Color(0xFF93B1A6),
+                                decorationThickness: 1.5,
+                                color: Color(0xFF93B1A6))),
+                      ),
+                    ],
+                  ),
 
-                          
-                          Row(mainAxisAlignment: MainAxisAlignment.center,
-                            children: [Text("Not Registered Yet? ",style: TextStyle(color: Colors.white),),
-                          const SizedBox(height: 25,),
-
-                          GestureDetector(
-                            onTap: widget.onTap,
-                            child: Text(" Register Now!",style: TextStyle(
-                            decorationColor: Color(0xFF93B1A6),
-                            decorationThickness: 1.5,
-                            color: Color(0xFF93B1A6))),
-                          ),],
-                          ),
-
-          const SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
 
-                          Text("Why Dev/Track?",
+                  Text("Why Dev/Track?",
                       style: TextStyle(
                           decoration: TextDecoration.underline,
                           decorationColor: Color(0xFF93B1A6),
                           decorationThickness: 1.5,
                           color: Color(0xFF93B1A6))),
-                          const SizedBox(height: 25,),
+                  const SizedBox(
+                    height: 25,
+                  ),
                 ],
               ),
             ),
