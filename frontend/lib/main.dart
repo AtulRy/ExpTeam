@@ -1,3 +1,4 @@
+import 'package:first_app/components/splash.dart';
 import 'package:first_app/pages/auth.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: auth(),
+      home: Splash(),
     );
   }
 }
