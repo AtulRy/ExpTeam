@@ -39,12 +39,12 @@ class _SplashState extends State<Splash> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedOpacity(
-              duration: Duration(seconds: 1),
+              duration: Duration(seconds: 2),
               opacity: opacityLevel,
               child: Image.asset(
                 'assets/logo.png',
-                height: 300.0,
-                width: 300.0,
+                height: 200.0,
+                width: 200.0,
               ),
             ),
           ],
