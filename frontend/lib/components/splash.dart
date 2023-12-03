@@ -42,7 +42,7 @@ class _SplashState extends State<Splash> {
               duration: Duration(seconds: 2),
               opacity: opacityLevel,
               child: Image.asset(
-                'assets/logo.png',
+                'lib/images/logo.png',
                 height: 200.0,
                 width: 200.0,
               ),
