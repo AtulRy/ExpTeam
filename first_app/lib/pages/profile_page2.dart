@@ -8,14 +8,14 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final double coverHeight = 280;
+  final double coverHeight = 200;
   final double profileHeight = 144;
 
   @override
   Widget build(BuildContext context) {
     final top = coverHeight - profileHeight / 2;
     return Scaffold(
-      // backgroundColor: Color(0xFF040D12),
+      backgroundColor: Color(0xFF040D12),
       body: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[buildTop(), buildContent(), buildContext()],
@@ -41,19 +41,21 @@ class _MainPageState extends State<MainPage> {
 
   Widget buildCoverImage() => Container(
         width: double.infinity,
-        height: coverHeight,
+        height: 200,
+        
         color: Colors.grey,
         child: Image.network(
-          'https://getwallpapers.com/wallpaper/full/3/6/4/273924.jpg',
+          'https://cdn.pixabay.com/photo/2017/06/05/10/15/landscape-2373649_960_720.jpg',
           fit: BoxFit.cover,
         ),
+        
       );
 
   Widget buildProfileImage() => CircleAvatar(
         radius: profileHeight / 2,
         backgroundColor: Colors.grey.shade800,
         backgroundImage: NetworkImage(
-          'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1701371617~exp=1701372217~hmac=8f8a77df6200671b517bd86ee177a25b331977a1ad5ca4d024d31418ef642d83',
+          'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
         ),
       );
 
@@ -62,13 +64,17 @@ class _MainPageState extends State<MainPage> {
           const SizedBox(height: 8),
           Text(
             'Nikhil Mathew',
-            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
           Text(
             'Designer',
-            style: TextStyle(fontSize: 23, fontWeight: FontWeight.w300),
+            style: TextStyle(
+                color: Colors.white, fontSize: 23, fontWeight: FontWeight.w300),
           ),
+          Divider(),
+          const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -93,12 +99,12 @@ class _MainPageState extends State<MainPage> {
           children: [
             Text(
               "About me",
-              style: TextStyle(fontSize: 18, height: 1.4),
+              style: TextStyle(color: Colors.white, fontSize: 18, height: 1.4),
             ),
             const SizedBox(height: 16),
             Text(
               "Hey! I'm Nikhil. Constantly curious, forever learning. Expressing creativity through. Coffee addict, wanderlust-infected adventurer. Let's share stories and good vibes! #AboutMe #LifeAdventures",
-              style: TextStyle(fontSize: 15, height: 1.4),
+              style: TextStyle(color: Colors.white, fontSize: 15, height: 1.4),
             ),
           ],
         ),
