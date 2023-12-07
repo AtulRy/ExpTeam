@@ -15,9 +15,10 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     final top = coverHeight - profileHeight / 2;
     return Scaffold(
+      // backgroundColor: Color(0xFF040D12),
       body: ListView(
         padding: EdgeInsets.zero,
-        children: <Widget>[buildTop(), buildContext(), buildContent()],
+        children: <Widget>[buildTop(), buildContent(), buildContext()],
       ),
     );
   }
