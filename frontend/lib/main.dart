@@ -1,5 +1,6 @@
 import 'package:first_app/pages/auth.dart';
 import 'package:first_app/pages/form1.dart';
+import 'package:first_app/pages/leaderboard.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: form1(),
+      home: leaderboard(),
     );
   }
 }

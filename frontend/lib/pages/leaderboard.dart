@@ -38,7 +38,7 @@ class leaderboard extends StatelessWidget {
                             imagePath: ImageConstant.imgImageRemovebgPreview,
                             height: 47,
                             width: 37,
-                            alignment: Alignment.centerRight,
+                            // alignment: Alignment.centerRight,
                             margin: EdgeInsets.only(right: 79),
                           ),
                           SizedBox(height: 9),
@@ -55,14 +55,14 @@ class leaderboard extends StatelessWidget {
                                       horizontal: 6,
                                       vertical: 2,
                                     ),
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: fs.Svg(
-                                          ImageConstant.imgGroup14,
-                                        ),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
+                                    // decoration: BoxDecoration(
+                                    //   image: DecorationImage(
+                                    //     image: fs.Svg(
+                                    //       ImageConstant.imgGroup14,
+                                    //     ),
+                                    //     fit: BoxFit.cover,
+                                    //   ),
+                                    // ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       crossAxisAlignment:
@@ -200,7 +200,7 @@ class leaderboard extends StatelessWidget {
                 horizontal: 18,
                 vertical: 29,
               ),
-              decoration: AppDecoration.fillBlueGray,
+              // decoration: AppDecoration.fillBlueGray,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -210,8 +210,8 @@ class leaderboard extends StatelessWidget {
                     width: 37,
                     margin: EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: appTheme.gray300,
-                    ),
+                        // color: appTheme.gray300,
+                        ),
                   ),
                   SizedBox(height: 2),
                   Container(
@@ -219,7 +219,7 @@ class leaderboard extends StatelessWidget {
                     width: 37,
                     margin: EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: appTheme.gray300,
+                      // color: appTheme.gray300,
                       borderRadius: BorderRadius.circular(
                         2,
                       ),
@@ -231,8 +231,8 @@ class leaderboard extends StatelessWidget {
                     width: 37,
                     margin: EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: appTheme.gray300,
-                    ),
+                        // color: appTheme.gray300,
+                        ),
                   ),
                   SizedBox(height: 13),
                   Row(
@@ -240,12 +240,12 @@ class leaderboard extends StatelessWidget {
                     children: [
                       Text(
                         "Leaderboard",
-                        style: theme.textTheme.displayMedium,
+                        // style: theme.textTheme.displayMedium,
                       ),
                       CustomImageView(
-                        imagePath: ImageConstant.imgImageUauh2zm54Transformed,
-                        height: 58.adaptSize,
-                        width: 58.adaptSize,
+                        imagePath: ImageConstant,
+                        height: 58,
+                        width: 58,
                         margin: EdgeInsets.only(
                           left: 8,
                           top: 10,
@@ -274,9 +274,9 @@ class leaderboard extends StatelessWidget {
                     Container(
                       width: 133,
                       padding: EdgeInsets.symmetric(horizontal: 30),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "ALL",
                         style: theme.textTheme.headlineLarge,
@@ -286,9 +286,9 @@ class leaderboard extends StatelessWidget {
                       width: 133,
                       margin: EdgeInsets.only(left: 16),
                       padding: EdgeInsets.symmetric(horizontal: 26),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "WEB",
                         style: theme.textTheme.headlineLarge,
@@ -301,9 +301,9 @@ class leaderboard extends StatelessWidget {
                         horizontal: 11,
                         vertical: 1,
                       ),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "UI/UX",
                         style: theme.textTheme.headlineLarge,
@@ -316,9 +316,9 @@ class leaderboard extends StatelessWidget {
                         horizontal: 11,
                         vertical: 3,
                       ),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "AIML",
                         style: theme.textTheme.headlineLarge,
@@ -328,9 +328,9 @@ class leaderboard extends StatelessWidget {
                       width: 133,
                       margin: EdgeInsets.only(left: 16),
                       padding: EdgeInsets.all(4),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "GAME",
                         style: theme.textTheme.headlineLarge,
@@ -343,9 +343,9 @@ class leaderboard extends StatelessWidget {
                         horizontal: 14,
                         vertical: 6,
                       ),
-                      decoration: AppDecoration.fillBluegray30001.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder14,
-                      ),
+                      // decoration: AppDecoration.fillBluegray30001.copyWith(
+                      //   borderRadius: BorderRadiusStyle.roundedBorder14,
+                      // ),
                       child: Text(
                         "APP",
                         style: theme.textTheme.headlineLarge,
