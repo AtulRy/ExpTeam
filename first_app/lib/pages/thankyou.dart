@@ -9,7 +9,7 @@ class ThankYouPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-         backgroundColor: Color(0xFF040D12),
+         backgroundColor: Color(0xFF183D3D),
         body: Center(
           child: MyWidget(),
         ),
@@ -58,7 +58,7 @@ class MyWidget extends StatelessWidget {
               fontSize: 13,
               color: Colors.white,
             ),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.justify,
           ),
         ),
       
