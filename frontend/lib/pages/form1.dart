@@ -17,6 +17,7 @@ class form1 extends StatelessWidget {
     var CustomTextStyles;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.black,
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.symmetric(
@@ -33,10 +34,12 @@ class form1 extends StatelessWidget {
                   right: 75,
                 ),
                 child: Text(
+                
                   "Previous Track(if you have participated)",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: CustomTextStyles.titleLargeWhiteA700,
+                  // style: CustomTextStyles.titleLargeWhiteA700,
+                  style:TextStyle(color: Colors.white),
                 ),
               ),
               SizedBox(height: 3),
@@ -48,7 +51,7 @@ class form1 extends StatelessWidget {
                       height: 22,
                       width: 24,
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -60,7 +63,8 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "AI/ML",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
+                          
                         ),
                       ),
                     ),
@@ -77,7 +81,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 2),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -89,7 +93,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -106,7 +110,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -118,7 +122,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Ui | Ux",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -135,7 +139,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 4),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -150,7 +154,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           " Android App Dev",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -167,7 +171,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -182,7 +186,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           "Game Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -199,7 +203,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -211,7 +215,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web3 | Blockchain",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -223,7 +227,7 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Text(
                   "1st preferred Track for cycle 5",
-                  style: CustomTextStyles.titleLargeWhiteA700,
+                  // style: CustomTextStyles.titleLargeWhiteA700,
                 ),
               ),
               SizedBox(height: 5),
@@ -235,7 +239,7 @@ class form1 extends StatelessWidget {
                       height: 22,
                       width: 24,
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -247,7 +251,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "AI/ML",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -264,7 +268,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 2),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -276,7 +280,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -293,7 +297,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -305,7 +309,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Ui | Ux",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -322,7 +326,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 4),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -337,7 +341,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           " Android App Dev",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -354,7 +358,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -369,7 +373,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           "Game Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -386,7 +390,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -398,7 +402,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web3 | Blockchain",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -408,7 +412,7 @@ class form1 extends StatelessWidget {
               SizedBox(height: 26),
               Text(
                 "2nd preferred Track for cycle 5",
-                style: CustomTextStyles.titleLargeWhiteA700,
+                // style: CustomTextStyles.titleLargeWhiteA700,
               ),
               SizedBox(height: 9),
               Padding(
@@ -419,7 +423,7 @@ class form1 extends StatelessWidget {
                       height: 22,
                       width: 24,
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -431,7 +435,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "AI/ML",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -448,7 +452,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 2),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -460,7 +464,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -477,7 +481,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -489,7 +493,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Ui | Ux",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -506,7 +510,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 4),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -521,7 +525,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           " Android App Dev",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -538,7 +542,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -553,7 +557,7 @@ class form1 extends StatelessWidget {
                         ),
                         child: Text(
                           "Game Development",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -570,7 +574,7 @@ class form1 extends StatelessWidget {
                       width: 24,
                       margin: EdgeInsets.only(bottom: 1),
                       decoration: BoxDecoration(
-                        color: appTheme.blueGray300,
+                        // color: appTheme.blueGray300,
                         borderRadius: BorderRadius.circular(
                           12,
                         ),
@@ -582,7 +586,7 @@ class form1 extends StatelessWidget {
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
                           "Web3 | Blockchain",
-                          style: theme.textTheme.bodyMedium,
+                          // style: theme.textTheme.bodyMedium,
                         ),
                       ),
                     ),
