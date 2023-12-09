@@ -1,9 +1,10 @@
+import 'package:first_app/pages/home.dart';
 import 'package:flutter/material.dart';
 
 class form extends StatefulWidget {
 const form({Key? key}) : super(key: key)
 
-  State<form> createState() => _HomePageState();
+  State<Homepage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<form> {
@@ -24,11 +25,7 @@ class _HomePageState extends State<form> {
                   fontFamily: 'Poppins',
                 ),
               ),
-<<<<<<<< HEAD:frontend/form.dart
-            ),
-            Container(
-              height: 100, // Set the desired height
-            ),
+
             Text(
               'Domain Preference',
               style: TextStyle(
@@ -43,7 +40,7 @@ class _HomePageState extends State<form> {
                 fontSize: 22,
                 color: Colors.white,
                 fontFamily: 'Poppins',
-========
+              )),
               SizedBox(height: 20,),
               Text(
                 '5th Cycle is starting soon!\nChoose your domains!',
@@ -55,7 +52,7 @@ class _HomePageState extends State<form> {
                   fontFamily: 'Poppins',
                 ),
                 
->>>>>>>> 0b5f2ea (solved errors):frontend/lib/pages/form.dart
+
               ),
               SizedBox(height: 40,),
               InputField(label: 'Name'),
@@ -103,9 +100,9 @@ class InputField extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
           ),
           Image.network('https://www.figma.com/file/QqSrXUf7uC5zbqiUVEULFY/dev%2Fhub?type=design&node-id=252-90&mode=design&t=EvTJV0U1Fx0TzYea-4',
-   width: 200.0,
-   height: 200.0,
-),
+            width: 200.0,
+            height: 200.0,
+          ),
         ),
       ),
     );
