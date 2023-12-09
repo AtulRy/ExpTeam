@@ -1,8 +1,13 @@
+import 'package:first_app/main.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+
+void main() => runApp(MyApp());
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -65,7 +70,8 @@ class _MainPageState extends State<MainPage> {
             child: GestureDetector(
               onTap: () {
                 // Handle edit button press
-                Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfilePage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => EditProfilePage()));
               },
               child: CircleAvatar(
                 backgroundColor: Colors.white,
@@ -74,7 +80,10 @@ class _MainPageState extends State<MainPage> {
                   icon: Icon(Icons.edit, color: Colors.black),
                   onPressed: () {
                     // Handle edit button press
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfilePage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => EditProfilePage()));
                   },
                 ),
               ),
@@ -139,6 +148,7 @@ class _MainPageState extends State<MainPage> {
         child: Center(child: Icon(icon, size: 20)),
       );
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -154,9 +164,12 @@ class EditProfilePage extends StatefulWidget {
 }
 
 class _EditProfilePageState extends State<EditProfilePage> {
+  TextEditingController _usernameController = TextEditingController();
   TextEditingController _nameController = TextEditingController();
   TextEditingController _emailController = TextEditingController();
   TextEditingController _bioController = TextEditingController();
+  TextEditingController _linkController = TextEditingController();
+  TextEditingController _gitController = TextEditingController();
   File? _image;
 
   @override
@@ -205,7 +218,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               TextFormField(
-                controller: _nameController,
+                controller: _usernameController,
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   hintText: 'Enter your username',
@@ -247,7 +260,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               TextFormField(
-                controller: _nameController,
+                controller: _gitController,
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   hintText: 'Enter your GitHub URL',
@@ -261,7 +274,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               TextFormField(
-                controller: _nameController,
+                controller: _linkController,
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   hintText: 'Enter your Linkedin URL',
@@ -310,9 +323,12 @@ class _EditProfilePageState extends State<EditProfilePage> {
   }
 
   void saveProfile() {
+    String username = _usernameController.text;
     String name = _nameController.text;
     String email = _emailController.text;
     String bio = _bioController.text;
+    String link = _linkController.text;
+    String git = _gitController.text;
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -322,4 +338,51 @@ class _EditProfilePageState extends State<EditProfilePage> {
   }
 }
 
-
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFF040D12),
+      body: SafeArea(
+        child: Row(
+          children: [
+            GestureDetector(
+              onTap: () {
+                // Navigate to the profile page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainPage()),
+                );
+              },
+              child: Text(
+                'Project Cycle',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Spacer(),
+            GestureDetector(
+              onTap: () {
+                // Navigate to the profile page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainPage()),
+                );
+              },
+              child: CircleAvatar(
+                radius: 20.0,
+                backgroundColor: Colors.white,
+                backgroundImage: NetworkImage(
+                  'https://www.google.com/imgres?imgurl=https%3A%2F%2Ffiverr-res.cloudinary.com%2Ft_profile_original%2Cq_auto%2Cf_auto%2Fattachments%2Fprofile%2Fphoto%2F8b8aedd6c47f5ece7251a391ff0ba060-1590910698170%2Fd9aba471-3530-4984-b293-8c3bc94c6935.jpg&tbnid=9COlJWK3n-GtUM&vet=12ahUKEwiT07D2uoKDAxUpSGwGHaTVCgwQMygBegQIARA0..i&imgrefurl=https%3A%2F%2Fwww.fiverr.com%2Fimryanide%2Fdraw-your-fictional-character&docid=eLT9tQjMnpwSUM&w=250&h=250&q=imryanide&hl=en-US&ved=2ahUKEwiT07D2uoKDAxUpSGwGHaTVCgwQMygBegQIARA0',
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
