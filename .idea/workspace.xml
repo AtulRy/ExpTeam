@@ -5,136 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c5fec5-41ef-4185-9e25-30c984d30292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/analysis_options.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/kotlin/com/example/flutterproj/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/fonts/Poppins-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Flutter/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Flutter/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/ios/RunnerTests/RunnerTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/lib/form.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/lib/main.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugins.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/main.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/my_application.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/my_application.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Base.lproj/MainMenu.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Configs/AppInfo.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Configs/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Configs/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Configs/Warnings.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/DebugProfile.entitlements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/MainFlutterWindow.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Runner/Release.entitlements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/RunnerTests/RunnerTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/test/widget_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/icons/Icon-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/icons/Icon-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/icons/Icon-maskable-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/icons/Icon-maskable-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/web/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugins.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/Runner.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/flutter_window.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/flutter_window.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/resource.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/resources/app_icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/runner.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/utils.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/win32_window.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/runner/win32_window.h" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/deekshith page/flutterproj/comp/nav.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deekshith page/flutterproj/components/navbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/lib/form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/lib/form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deekshith page/flutterproj/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/Deekshith C/Documents/ExpTeam",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Deekshith C/Documents/ExpTeam&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
