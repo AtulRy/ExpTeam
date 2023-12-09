@@ -1,3 +1,4 @@
+import 'package:first_app/pages/tnx.dart';
 import 'package:flutter/material.dart';
 class Formpage2 extends StatelessWidget {
   @override
@@ -161,7 +162,7 @@ class Formpage2 extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: ElevatedButton(
-                onPressed: () {
+                onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => TnxPage()),);
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Color(0xFF93B1A4).withOpacity(0.6),
