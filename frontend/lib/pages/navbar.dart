@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -35,7 +34,11 @@ class sampage extends StatelessWidget {
               activeColor: Colors.white,
               tabBackgroundColor: Color(0xFF93B1A4).withOpacity(0.5),
               padding: EdgeInsets.all(16),
-              gap:6,tabs: const [
+              gap:6,
+              onTabChange: (index){
+            print(index);
+              },
+              tabs: const [
             GButton(icon: Icons.home, text: "Home",),
             GButton(icon: Icons.folder, text: "Projects",),
             GButton(icon: Icons.calendar_today, text: "Schedule",),

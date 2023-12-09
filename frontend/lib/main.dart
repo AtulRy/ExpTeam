@@ -1,5 +1,5 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:first_app/components/splash.dart';
+import 'dart:html';
+
 import 'package:first_app/pages/navbar.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: sampage(),
     );
   }
 }
