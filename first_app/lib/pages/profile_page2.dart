@@ -13,7 +13,6 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    final top = coverHeight - profileHeight / 2;
     return Scaffold(
       backgroundColor: Color(0xFF040D12),
       body: ListView(
@@ -42,28 +41,44 @@ class _MainPageState extends State<MainPage> {
   Widget buildCoverImage() => Container(
         width: double.infinity,
         height: 200,
-        
         color: Colors.grey,
         child: Image.network(
           'https://cdn.pixabay.com/photo/2017/06/05/10/15/landscape-2373649_960_720.jpg',
           fit: BoxFit.cover,
         ),
-        
       );
 
-  Widget buildProfileImage() => CircleAvatar(
-        radius: profileHeight / 2,
-        backgroundColor: Colors.grey.shade800,
-        backgroundImage: NetworkImage(
-          'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
-        ),
+  Widget buildProfileImage() => Stack(
+        alignment: Alignment.bottomRight,
+        children: [
+          CircleAvatar(
+            radius: profileHeight / 2,
+            backgroundColor: Colors.grey.shade800,
+            backgroundImage: NetworkImage(
+              'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
+            ),
+          ),
+          Positioned(
+            child: CircleAvatar(
+              backgroundColor: Colors.white,
+              radius: 20.0,
+              child: IconButton(
+                icon: Icon(Icons.edit, color: Colors.black),
+                onPressed: () {
+                  // Handle edit button press
+                  // You can open a modal or navigate to the editing screen
+                },
+              ),
+            ),
+          ),
+        ],
       );
 
   Widget buildContent() => Column(
         children: [
           const SizedBox(height: 8),
           Text(
-            'Nikhil Mathew',
+            'Rayan Sheikky',
             style: TextStyle(
                 color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
           ),
@@ -103,7 +118,7 @@ class _MainPageState extends State<MainPage> {
             ),
             const SizedBox(height: 16),
             Text(
-              "Hey! I'm Nikhil. Constantly curious, forever learning. Expressing creativity through. Coffee addict, wanderlust-infected adventurer. Let's share stories and good vibes! #AboutMe #LifeAdventures",
+              "Hey! I'm Rayan. Constantly curious, forever learning. Expressing creativity through. Coffee addict, wanderlust-infected adventurer. Let's share stories and good vibes! #AboutMe #LifeAdventures",
               style: TextStyle(color: Colors.white, fontSize: 15, height: 1.4),
             ),
           ],
