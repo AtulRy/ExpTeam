@@ -12,19 +12,16 @@ class _HomePageState extends State<form> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "\<dev/tracker\>",
-                style: TextStyle(
-                  fontSize: 62,
-                  color: const Color.fromARGB(255, 2, 65, 34),
-                  fontFamily: 'Poppins',
-                ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Dev/Hub",
+              style: TextStyle(
+                fontSize: 64,
+                color: const Color.fromARGB(255, 2, 65, 34),
+                fontFamily: 'Poppins',
               ),
-<<<<<<<< HEAD:frontend/form.dart
             ),
             Container(
               height: 100, // Set the desired height
@@ -43,29 +40,15 @@ class _HomePageState extends State<form> {
                 fontSize: 22,
                 color: Colors.white,
                 fontFamily: 'Poppins',
-========
-              SizedBox(height: 20,),
-              Text(
-                '5th Cycle is starting soon!\nChoose your domains!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  
-                  fontSize: 18,
-                  color: Colors.white,
-                  fontFamily: 'Poppins',
-                ),
-                
->>>>>>>> 0b5f2ea (solved errors):frontend/lib/pages/form.dart
               ),
-              SizedBox(height: 40,),
-              InputField(label: 'Name'),
-              InputField(label: 'Email'),
-              InputField(label: 'Phone Number'),
-              InputField(label: 'SRN/Registration number'),
-              InputField(label: 'Branch'),
-              InputField(label: 'Semester'),
-            ],
-          ),
+            ),
+            InputField(label: 'Name'),
+            InputField(label: 'Email'),
+            InputField(label: 'Phone Number'),
+            InputField(label: 'SRN/Registration number'),
+            InputField(label: 'Branch'),
+            InputField(label: 'Semester'),
+          ],
         ),
       ),
     );
