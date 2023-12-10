@@ -13,7 +13,7 @@ class leaderboard extends StatelessWidget {
     mediaQueryData = MediaQuery.of(context);
 
     var CustomTextStyles;
-    var ImageConstant;
+    var ImageConstants = 'imgImageRemovebgPreview';
     return SafeArea(
       child: Scaffold(
         body: Container(
@@ -35,7 +35,7 @@ class leaderboard extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           CustomImageView(
-                            imagePath: ImageConstant.imgImageRemovebgPreview,
+                            imagePath: 'ImageConstants.medal.png',
                             height: 47,
                             width: 37,
                             // alignment: Alignment.centerRight,
@@ -182,11 +182,7 @@ class leaderboard extends StatelessWidget {
 
   /// Section Widget
   Widget _buildStackOne(BuildContext context) {
-    var AppDecoration;
-    var appTheme;
     var theme;
-    var ImageConstant;
-    var BorderRadiusStyle;
     return SizedBox(
       height: 235,
       width: 429,
@@ -243,7 +239,7 @@ class leaderboard extends StatelessWidget {
                         // style: theme.textTheme.displayMedium,
                       ),
                       CustomImageView(
-                        imagePath: ImageConstant,
+                        imagePath: 'ImageConstants.medal.png',
                         height: 58,
                         width: 58,
                         margin: EdgeInsets.only(
@@ -726,10 +722,14 @@ class leaderboard extends StatelessWidget {
       ],
     );
   }
+
+  CustomImageView(
+      {required String imagePath,
+      required int height,
+      required int width,
+      required EdgeInsets margin}) {}
 }
 
-CustomImageView(
-    {required imagePath,
-    required height,
-    required width,
-    required EdgeInsets margin}) {}
+class ImageConstants {
+  static const String imgImageRemovebgPreview = 'medal.png';
+}

@@ -30,16 +30,15 @@ class form1 extends StatelessWidget {
               Container(
                 width: 293,
                 margin: EdgeInsets.only(
-                  left: 3,
-                  right: 75,
+                  left: 5,
+                  right: 5,
                 ),
                 child: Text(
-                
                   "Previous Track(if you have participated)",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   // style: CustomTextStyles.titleLargeWhiteA700,
-                  style:TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 20.0),
                 ),
               ),
               SizedBox(height: 3),
@@ -47,6 +46,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -64,7 +69,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "AI/ML",
                           // style: theme.textTheme.bodyMedium,
-                          
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -76,6 +81,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -94,6 +105,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -105,6 +117,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -123,6 +141,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Ui | Ux",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -134,6 +153,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -155,6 +180,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           " Android App Dev",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -166,6 +192,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -187,6 +219,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Game Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -198,6 +231,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -216,6 +255,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web3 | Blockchain",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -228,6 +268,7 @@ class form1 extends StatelessWidget {
                 child: Text(
                   "1st preferred Track for cycle 5",
                   // style: CustomTextStyles.titleLargeWhiteA700,
+                  style: TextStyle(color: Colors.white, fontSize: 20.0),
                 ),
               ),
               SizedBox(height: 5),
@@ -235,6 +276,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -252,6 +299,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "AI/ML",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -263,6 +311,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -281,6 +335,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -292,6 +347,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -310,6 +371,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Ui | Ux",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -321,6 +383,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -342,6 +410,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           " Android App Dev",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -353,6 +422,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -374,6 +449,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Game Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -385,6 +461,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 4),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -403,6 +485,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web3 | Blockchain",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -413,12 +496,19 @@ class form1 extends StatelessWidget {
               Text(
                 "2nd preferred Track for cycle 5",
                 // style: CustomTextStyles.titleLargeWhiteA700,
+                style: TextStyle(color: Colors.white, fontSize: 20.0),
               ),
               SizedBox(height: 9),
               Padding(
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -436,6 +526,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "AI/ML",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -447,6 +538,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -465,6 +562,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -476,6 +574,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -494,6 +598,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Ui | Ux",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -505,6 +610,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -526,6 +637,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           " Android App Dev",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -537,6 +649,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -558,6 +676,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Game Development",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
@@ -569,6 +688,12 @@ class form1 extends StatelessWidget {
                 padding: EdgeInsets.only(left: 6),
                 child: Row(
                   children: [
+                    CircleAvatar(
+                      backgroundColor: Color.fromARGB(
+                          255, 57, 181, 164), // Adjust color as needed
+                      radius: 8.0, // Adjust size as needed
+                    ),
+                    SizedBox(width: 2.0),
                     Container(
                       height: 22,
                       width: 24,
@@ -587,6 +712,7 @@ class form1 extends StatelessWidget {
                         child: Text(
                           "Web3 | Blockchain",
                           // style: theme.textTheme.bodyMedium,
+                          style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
                       ),
                     ),
