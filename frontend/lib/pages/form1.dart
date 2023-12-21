@@ -12,9 +12,6 @@ class form1 extends StatelessWidget {
   Widget build(BuildContext context) {
     mediaQueryData = MediaQuery.of(context);
 
-    var theme;
-    var appTheme;
-    var CustomTextStyles;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.black,
@@ -178,7 +175,7 @@ class form1 extends StatelessWidget {
                           top: 3,
                         ),
                         child: Text(
-                          " Android App Dev",
+                          "Android App Dev",
                           // style: theme.textTheme.bodyMedium,
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
@@ -408,7 +405,7 @@ class form1 extends StatelessWidget {
                           top: 3,
                         ),
                         child: Text(
-                          " Android App Dev",
+                          "Android App Dev",
                           // style: theme.textTheme.bodyMedium,
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
@@ -635,7 +632,7 @@ class form1 extends StatelessWidget {
                           top: 3,
                         ),
                         child: Text(
-                          " Android App Dev",
+                          "Android App Dev",
                           // style: theme.textTheme.bodyMedium,
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
                         ),
