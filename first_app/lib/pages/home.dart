@@ -175,7 +175,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF183D3D),
+     backgroundColor: Color(0xFF040D12),
       appBar: AppBar(
         title: Text('Edit Profile'),
         titleTextStyle:
@@ -376,7 +376,7 @@ class Home extends StatelessWidget {
                 radius: 20.0,
                 backgroundColor: Colors.white,
                 backgroundImage: NetworkImage(
-                  'https://www.google.com/imgres?imgurl=https%3A%2F%2Ffiverr-res.cloudinary.com%2Ft_profile_original%2Cq_auto%2Cf_auto%2Fattachments%2Fprofile%2Fphoto%2F8b8aedd6c47f5ece7251a391ff0ba060-1590910698170%2Fd9aba471-3530-4984-b293-8c3bc94c6935.jpg&tbnid=9COlJWK3n-GtUM&vet=12ahUKEwiT07D2uoKDAxUpSGwGHaTVCgwQMygBegQIARA0..i&imgrefurl=https%3A%2F%2Fwww.fiverr.com%2Fimryanide%2Fdraw-your-fictional-character&docid=eLT9tQjMnpwSUM&w=250&h=250&q=imryanide&hl=en-US&ved=2ahUKEwiT07D2uoKDAxUpSGwGHaTVCgwQMygBegQIARA0',
+                  'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
                 ),
               ),
             ),
