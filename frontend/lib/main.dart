@@ -1,12 +1,10 @@
 import 'package:first_app/pages/auth.dart';
-import 'package:first_app/pages/form1.dart';
 import 'package:first_app/pages/profile.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:first_app/pages/form.dart';
-import 'package:first_app/pages/form2.dart';
 import 'package:first_app/pages/form3.dart';
 
 void main() async {
