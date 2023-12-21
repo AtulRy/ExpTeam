@@ -11,6 +11,7 @@ void main() => runApp(MyApp());
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
+
   @override
   State<MainPage> createState() => _MainPageState();
 }
@@ -23,9 +24,8 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF040D12),
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[buildTop(), buildContent(), buildContext()],
+      body: Column(
+        children: <Widget>[buildTop(), Expanded(child: buildContent()), buildContext()],
       ),
     );
   }
@@ -92,38 +92,44 @@ class _MainPageState extends State<MainPage> {
         ],
       );
 
-  Widget buildContent() => Column(
+Widget buildContent() => Column(
+    children: [
+      const SizedBox(height: 8),
+      Text(
+        'Rayan Sheikky',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 23,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      const SizedBox(height: 16),
+      Text(
+        'Designer',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 23,
+          fontWeight: FontWeight.w300,
+        ),
+      ),
+      Divider(),
+      const SizedBox(height: 16),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 8),
-          Text(
-            'Rayan Sheikky',
-            style: TextStyle(
-                color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Designer',
-            style: TextStyle(
-                color: Colors.white, fontSize: 23, fontWeight: FontWeight.w300),
-          ),
-          Divider(),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              buildSocialIcon(FontAwesomeIcons.github),
-              const SizedBox(width: 12),
-              buildSocialIcon(FontAwesomeIcons.instagram),
-              const SizedBox(width: 12),
-              buildSocialIcon(FontAwesomeIcons.linkedin),
-              const SizedBox(width: 12),
-            ],
-          ),
-          const SizedBox(height: 16),
-          Divider(),
-          const SizedBox(height: 16),
+          buildSocialIcon(FontAwesomeIcons.github),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.instagram),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.linkedin),
+          const SizedBox(width: 12),
         ],
-      );
+      ),
+      const SizedBox(height: 16),
+      Divider(),
+      const SizedBox(height: 16),
+    ],
+  );
 
   Widget buildContext() => Container(
         padding: EdgeInsets.symmetric(horizontal: 48),
@@ -344,26 +350,33 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFF040D12),
       body: SafeArea(
-        child: Row(
+        child: Column(
           children: [
-            GestureDetector(
-              onTap: () {
-                // Navigate to the profile page
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MainPage()),
-                );
-              },
-              child: Text(
-                'Project Cycle',
-                style: TextStyle(
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                Text(
+                  'Project Cycle V',
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-            ),
-            const SizedBox(width: 8),
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(width: 4),
+                Spacer(),
+                const SizedBox(width: 8),
             Spacer(),
+                CircleAvatar(
+                  radius: 20.0,
+                  backgroundColor: Colors.white,
+                  backgroundImage: NetworkImage(
+                    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
+                  ),
+                ),
+              ],
+            ),
+
             GestureDetector(
               onTap: () {
                 // Navigate to the profile page
@@ -372,15 +385,68 @@ class Home extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => MainPage()),
                 );
               },
-              child: CircleAvatar(
-                radius: 20.0,
-                backgroundColor: Colors.white,
-                backgroundImage: NetworkImage(
-                  'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/8b8aedd6c47f5ece7251a391ff0ba060-1590910698170/d9aba471-3530-4984-b293-8c3bc94c6935.jpg',
-                ),
+            ),
+            
+            Expanded(
+              child: ListView(
+                children: [
+                  _buildCard('App Dev-51', 'Dev/Track Dashboard','Your Gateway to Seamless Access! Empowering teachers to effortlessly upload and students to conveniently access notes across diverse schools and branches within Reva University', 211, 320),
+                  const SizedBox(height: 8),
+                  _buildCard('Web Dev-53', 'NotesNinja','Project  Description :  A app/web dashboard for our very own dev/track members that provides a better platform for mentors to monitor and...read more', 211, 320),
+                  const SizedBox(height: 8),
+                  _buildCard('Ui/Ux-42', 'Uni App','Your Gateway to Seamless Access! Empowering teachers to effortlessly upload and students to conveniently access notes across diverse schools and branches within Reva University', 211, 320),
+                ],
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCard(String title, String content, String content2, double height, double width) {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      color: Color(0xFF183D3D),
+      elevation: 3,
+      child: Container(
+        height: height,
+        width: width,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                content,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+              content2,
+                style:TextStyle (
+                  fontWeight: FontWeight.w200,
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
